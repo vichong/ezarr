@@ -40,7 +40,7 @@ services:
       - TZ=${TIMEZONE}
     volumes:
       - ${ROOT_DIR}/docker/jellyfin-config:/config
-      - data/media:/data/media
+      - /data/media:/data/media
     ports:
       - 8096:8096
     restart: unless-stopped
@@ -171,4 +171,3 @@ services:
 volumes:
   data:
     external: true
-    
