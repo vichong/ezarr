@@ -171,3 +171,7 @@ services:
 volumes:
   data:
     external: true
+  torrents:
+    extrenal: true
+  media:
+    external: true
