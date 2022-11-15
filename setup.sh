@@ -30,8 +30,8 @@ sudo mkdir -pv docker/{sonarr,radarr,lidarr,readarr,mylar,prowlarr,qbittorrent,j
 # sudo mkdir -pv data/{torrents,media}/{tv,movies,music,books,comics}
 
 # Set permissions
-sudo chmod -R 775 data/
-sudo chown -R $(id -u):mediacenter data/
+sudo chmod -R 775 /mnt/nfs/data/
+sudo chown -R $(id -u):mediacenter /mnt/nfs/data/
 sudo chown -R sonarr:mediacenter docker/sonarr-config
 sudo chown -R radarr:mediacenter docker/radarr-config
 sudo chown -R lidarr:mediacenter docker/lidarr-config
