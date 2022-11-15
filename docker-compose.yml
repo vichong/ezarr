@@ -172,6 +172,6 @@ volumes:
   data:
     external: true
   torrents:
-    extrenal: true
+    external: true
   media:
     external: true
