@@ -40,7 +40,7 @@ services:
       - TZ=${TIMEZONE}
     volumes:
       - ${ROOT_DIR}/docker/jellyfin-config:/config
-      - /data/media:/data/media
+      - data/media:/data/media
     ports:
       - 8096:8096
     restart: unless-stopped
@@ -58,7 +58,7 @@ services:
       - TZ=${TIMEZONE}
     volumes:
       - ${ROOT_DIR}/docker/radarr-config:/config
-      - /data:/data
+      - data:/data
     ports:
       - 7878:7878
     restart: unless-stopped
@@ -73,7 +73,7 @@ services:
       - TZ=${TIMEZONE}
     volumes:
       - ${ROOT_DIR}/docker/sonarr-config:/config
-      - /data:/data
+      - data:/data
     ports:
       - 8989:8989
     restart: unless-stopped
@@ -88,7 +88,7 @@ services:
       - TZ=${TIMEZONE}
     volumes:
       - ${ROOT_DIR}/docker/lidarr-config:/config
-      - /data:/data
+      - data:/data
     ports:
       - 8686:8686
     restart: unless-stopped
@@ -103,7 +103,7 @@ services:
       - TZ=${TIMEZONE}
     volumes:
       - ${ROOT_DIR}/docker/readarr-config:/config
-      - /data:/data
+      - data:/data
     ports:
       - 8787:8787
     restart: unless-stopped
@@ -117,7 +117,7 @@ services:
       - UMASK=002
     volumes:
       - ${ROOT_DIR}/docker/mylar-config:/config
-      - /data:/data
+      - data:/data
     ports:
       - 8090:8090
     restart: unless-stopped
@@ -161,7 +161,7 @@ services:
       - WEBUI_PORT=8080
     volumes:
       - ${ROOT_DIR}/docker/qbittorrent-config:/config
-      - /data/torrents:/data/torrents
+      - data/torrents:/data/torrents
     ports:
       - 8080:8080
       - 6881:6881
