@@ -27,7 +27,7 @@ sudo usermod -a -G mediacenter sabnzbd
 
 # Make directories
 sudo mkdir -pv docker/{sonarr,radarr,lidarr,readarr,mylar,prowlarr,qbittorrent,jackett,bazarr,jellyfin,sabnzbd}-config
-# sudo mkdir -pv data/{torrents,media}/{tv,movies,music,books,comics}
+sudo mkdir -pv data/{torrents,media}/{tv,movies,music,books,comics}
 
 # Set permissions
 sudo chmod -R 775 /mnt/nfs/data/
