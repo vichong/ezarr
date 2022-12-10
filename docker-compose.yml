@@ -178,11 +178,10 @@ services:
       - 8080:8080
       - 9090:9090
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=13011
+      - PGID=13000
       - TZ==${TIMEZONE}
     volumes:
-      - /etc/localtime:/etc/localtime:ro
       - ${ROOT_DIR}/docker/sabnzdb-config:/config
       - data:/data 
 
