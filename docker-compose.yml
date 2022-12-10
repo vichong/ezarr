@@ -163,7 +163,7 @@ services:
       - ${ROOT_DIR}/docker/qbittorrent-config:/config
       - torrents:/torrents
     ports:
-      - 8080:8080
+      - 8090:8090
       - 6881:6881
       - 6881:6881/udp
     restart: unless-stopped
@@ -175,6 +175,7 @@ services:
     logging:
       driver: json-file
     ports:
+      - 8080:8080
       - 9090:9090
     environment:
       - PUID=1000
