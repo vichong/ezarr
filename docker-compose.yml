@@ -158,7 +158,7 @@ services:
       - PGID=13000
       - UMASK=002
       - TZ=${TIMEZONE}
-      - WEBUI_PORT=8080
+      - WEBUI_PORT=8090
     volumes:
       - ${ROOT_DIR}/docker/qbittorrent-config:/config
       - torrents:/torrents
@@ -180,7 +180,7 @@ services:
     environment:
       - PUID=13011
       - PGID=13000
-      - TZ==${TIMEZONE}
+      - TZ=${TIMEZONE}
     volumes:
       - ${ROOT_DIR}/docker/sabnzdb-config:/config
       - data:/data 
