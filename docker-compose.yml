@@ -168,7 +168,7 @@ services:
       - 6881:6881/udp
     restart: unless-stopped
 
-sabnzbd:
+  sabnzbd:
     container_name: sabnzbd
     image: linuxserver/sabnzbd
     restart: unless-stopped
